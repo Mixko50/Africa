@@ -48,8 +48,10 @@ struct ContentView: View {
                             NavigationLink(destination: AnimalDetailView(animal: animal)){
                                 AnimalListItemView(animal: animal)
                                     .padding(.vertical, 8)
-                            }
-                        }
+                            } //: Link
+                        } //: Loop
+                        CreditsView()
+                            .modifier(CenterModifier())
                     }
                 } else {
                     ScrollView(.vertical,showsIndicators: false) {
